@@ -10,17 +10,13 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
     <title>Frontend Mentor | Scoot</title>
   </head>
   <body>
     <header>
       <div class="logo-nav-wrapper">
-        <img
-          id="menuIcon"
-          class="menu-icon"
-          src="./assets/icons/hamburger.svg"
-          alt="yellow hamburger menu icon"
-        />
+        <div id="menuIcon" class="menu-icon"></div>
         <img class="header-logo" src="./assets/logo.svg" alt="scoot logo" />
         <nav class="header-nav">
           <a class="header-link" href="#">About</a>
@@ -29,6 +25,14 @@
         </nav>
       </div>
       <a class="header-btn" href="#">Get Scootin</a>
+      <div id="mobileMenu" class="mobile-menu">
+        <nav class="mobile-menu-nav">
+          <a class="mobile-nav-link" href="#">About</a>
+          <a class="mobile-nav-link" href="#">Location</a>
+          <a class="mobile-nav-link" href="#">Careers</a>
+        </nav>
+        <a class="mobile-nav-button" href="#">Get Scootin</a>
+      </div>
     </header>
     <main>
       <section class="hero-section">
@@ -46,6 +50,7 @@
           class="right-arrow"
           src="./assets/patterns/right-arrow.svg"
           alt=""
+          loading="lazy"
         />
       </section>
       <section class="features-section">
@@ -55,6 +60,7 @@
               class="feature-icon"
               src="./assets/icons/locate.svg"
               alt="locate icon"
+              loading="lazy"
             />
             <div class="feature-text-wrapper">
               <h2>Locate with app</h2>
@@ -70,6 +76,7 @@
               class="feature-icon"
               src="./assets/icons/scooter.svg"
               alt="locate icon"
+              loading="lazy"
             />
             <div class="feature-text-wrapper">
               <h2>Pick your scooter</h2>
@@ -85,6 +92,7 @@
               class="feature-icon"
               src="./assets/icons/ride.svg"
               alt="locate icon"
+              loading="lazy"
             />
             <div class="feature-text-wrapper">
               <h2>Enjoy the ride</h2>
@@ -103,11 +111,13 @@
             class="feature-two-arrow-left"
             src="./assets/patterns/left-downward-arrow.svg"
             alt=""
+            loading="lazy"
           />
           <img
             class="feature-item-two-image"
             src="./assets/images/telemetry.jpg"
             alt="Young person smiling slightly while looking at a smartphone, standing against a dark chalkboard background; focused and content mood; no visible text in the image"
+            loading="lazy"
           />
           <div class="feature-item-two-text-wrapper">
             <h2 class="feature-item-title">Easy to use riding telemetry</h2>
@@ -125,11 +135,13 @@
             class="feature-two-arrow-right"
             src="./assets/patterns/right-arrow.svg"
             alt=""
+            loading="lazy"
           />
           <img
             class="feature-item-two-image"
             src="./assets/images/near-you.jpg"
             alt="Young person smiling slightly while looking at a smartphone, standing against a dark chalkboard background; focused and content mood; no visible text in the image"
+            loading="lazy"
           />
           <div class="feature-item-two-text-wrapper">
             <h2 class="feature-item-title">Coming to a city near you</h2>
@@ -147,11 +159,13 @@
             class="feature-item-three-arrow"
             src="./assets/patterns/left-downward-arrow.svg"
             alt=""
+            loading="lazy"
           />
           <img
             class="feature-item-two-image"
             src="./assets/images/payments.jpg"
             alt="Young person smiling slightly while looking at a smartphone, standing against a dark chalkboard background; focused and content mood; no visible text in the image"
+            loading="lazy"
           />
           <div class="feature-item-two-text-wrapper">
             <h2 class="feature-item-title">Zero hassle payments</h2>
@@ -174,11 +188,13 @@
             class="store-link"
             src="./assets/icons/app-store.svg"
             alt="App Store download badge that reads Available on the AppStore"
+            loading="lazy"
           />
           <img
             class="store-link"
             src="./assets/icons/google-play.svg"
             alt="Google Play download badge"
+            loading="lazy"
           />
         </div>
       </section>
