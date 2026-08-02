@@ -593,6 +593,13 @@ header {
 /* Tablet */
 
 @media screen and (min-width: 45rem) {
+  main,
+  footer {
+    margin-inline: auto;
+    width: min(100%, 90rem);
+    overflow-x: hidden;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
