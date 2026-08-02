@@ -5,3 +5,19 @@ menuBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('show');
   menuBtn.classList.toggle('menu-icon-close');
 });
+
+const sections = document.querySelectorAll('section');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('section-visible');
+    } else {
+      entry.target.classList.remove('section-visible');
+    }
+  });
+});
+
+sections.forEach((section) => {
+  observer.observe(section);
+});
