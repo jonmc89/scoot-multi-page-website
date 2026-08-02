@@ -844,4 +844,24 @@ header {
     top: 5rem;
     left: 57rem;
   }
+
+  .download-section {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8rem;
+  }
+
+  .download-title {
+    text-align: left;
+  }
+
+  .download-circles {
+    right: -10rem;
+    bottom: 0;
+  }
+
+  .footer-content {
+    justify-content: space-around;
+    gap: 24rem;
+  }
 }
