@@ -358,6 +358,11 @@ header {
   bottom: 2.8125rem;
 }
 
+.hero-line {
+  display: none;
+  position: absolute;
+}
+
 /* Feature Section */
 
 .features-section {
@@ -618,7 +623,8 @@ header {
   }
 
   .hero-section {
-    background-position: center;
+    background-image: url(./assets/images/home-hero-tablet.jpg);
+    background-size: cover;
   }
 
   .hero-text {
@@ -726,6 +732,43 @@ header {
 
 @media screen and (min-width: 90rem) {
   header {
-    padding: 4rem 10rem;
+    padding: 3rem 10rem;
+  }
+
+  .hero-section {
+    align-items: flex-start;
+    background-image: url(./assets/images/home-hero-desktop.jpg);
+  }
+
+  h1 {
+    margin-inline-start: 4em;
+    width: 18ch;
+    text-align: left;
+  }
+
+  .hero-text {
+    margin-inline-start: 14rem;
+    width: 62ch;
+    text-align: left;
+  }
+
+  .hero-btn {
+    margin-inline-start: 18rem;
+  }
+
+  .right-arrow {
+    top: 22.5rem;
+    left: 47rem;
+  }
+
+  .hero-circles-image {
+    top: 27rem;
+    right: -2rem;
+  }
+
+  .hero-line {
+    display: block;
+    top: 23rem;
+    left: 0;
   }
 }
