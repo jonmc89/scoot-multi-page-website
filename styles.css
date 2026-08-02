@@ -791,4 +791,57 @@ header {
     width: 64rem;
     height: 1rem;
   }
+
+  .features-section-two {
+    align-items: center;
+  }
+
+  .feature-item-two-text-wrapper {
+    align-items: flex-start;
+  }
+
+  .feature-item-two-text,
+  .feature-item-title {
+    text-align: left;
+  }
+  .feature-one,
+  .feature-two,
+  .feature-three {
+    gap: 8rem;
+  }
+
+  .feature-one {
+    flex-direction: row-reverse;
+  }
+
+  .feature-two {
+    flex-direction: row;
+  }
+
+  .feature-three {
+    flex-direction: row-reverse;
+  }
+
+  .feature-two-arrow-left {
+    right: -12rem;
+  }
+
+  .circle-one,
+  .circle-three {
+    right: -30rem;
+  }
+
+  .circle-two {
+    left: -30rem;
+  }
+
+  .feature-two-arrow-right {
+    top: -1rem;
+    left: -12rem;
+  }
+
+  .feature-item-three-arrow {
+    top: 5rem;
+    left: 57rem;
+  }
 }
