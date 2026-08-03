@@ -372,6 +372,12 @@ h1 {
   margin-block-end: 6rem;
 }
 
+.value-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
 .values-header,
 .value-sub-header,
 .value-number {
@@ -438,6 +444,12 @@ h1 {
 .faq-section,
 .faq-item-container,
 .faq-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -737,6 +749,51 @@ h1 {
   header {
     padding: 48px 0;
     width: min(100%, 1440px);
+  }
+
+  .about-header-section {
+    height: 12.5rem;
+  }
+
+  .header-circles {
+    top: 5rem;
+  }
+
+  .about-article-one {
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 25rem;
+  }
+  .article-header {
+    width: 19ch;
+    text-align: left;
+  }
+
+  .article-text {
+    width: 44ch;
+  }
+
+  .about-article-two {
+    flex-direction: row;
+    justify-content: right;
+    gap: 25rem;
+  }
+
+  .value-item-container {
+    flex-direction: row;
+    gap: 10rem;
+  }
+
+  .value-main-text {
+    width: 30ch;
+  }
+
+  .faq-wrapper {
+    flex-direction: row;
+    gap: 12rem;
+  }
+  .faq-sub-header {
+    align-self: flex-start;
   }
 
   .download-section {
