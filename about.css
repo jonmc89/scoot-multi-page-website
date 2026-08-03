@@ -256,8 +256,15 @@ header {
   right: -22.3rem;
 }
 
+.article-one-circle {
+  display: none;
+  position: absolute;
+  right: -20rem;
+}
+
 .about-header-section {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   opacity: 0;
@@ -271,8 +278,15 @@ header {
 h1 {
   color: var(--neutral-0);
   font-weight: var(--txt-3-fw);
-  font-size: var(--txt-3-fs);
+  font-size: clamp(var(--txt-3-fs), 5vw, 3.5rem);
   letter-spacing: var(--txt-3-ls);
+}
+
+.header-circles {
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  right: -2rem;
 }
 
 /* About Hero Section */
@@ -310,6 +324,7 @@ h1 {
 .article-header {
   width: 20ch;
   color: var(--neutral-950);
+  color: var(--slate-600);
   font-weight: var(--txt-4-fw);
   font-size: var(--txt-4-fs);
   line-height: 100%;
@@ -341,6 +356,13 @@ h1 {
   left: -4.8rem;
 }
 
+.article-two-circle {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -20rem;
+}
+
 /* Values Section */
 
 .values-section {
@@ -348,6 +370,12 @@ h1 {
   opacity: 0;
   transition: opacity 0.6s ease;
   margin-block-end: 6rem;
+}
+
+.values-header,
+.value-sub-header,
+.value-number {
+  color: var(--slate-600);
 }
 
 .values-section,
@@ -421,6 +449,9 @@ h1 {
 .faq-header {
   margin-block-end: 3rem;
   color: var(--slate-600);
+  font-weight: var(--txt-4-fw);
+  font-size: var(--txt-4-fs);
+  letter-spacing: var(--txt-4-ls);
 }
 
 .faq-sub-header {
@@ -472,7 +503,12 @@ h1 {
   margin-block-end: 5.5rem;
 }
 .chevron {
+  transition: transform 0.1s ease-in-out;
   cursor: pointer;
+}
+
+.chevron-open {
+  transform: rotate(180deg);
 }
 
 /* Download Section */
@@ -506,8 +542,9 @@ h1 {
 }
 
 .download-circles {
-  display: none;
+  display: block;
   position: absolute;
+  right: -10rem;
   bottom: 0;
 }
 
@@ -624,6 +661,50 @@ h1 {
     display: block;
   }
 
+  .about-header-section {
+    justify-content: flex-start;
+    padding: 0 4rem;
+  }
+
+  .header-circles {
+    display: block;
+  }
+
+  .article-image {
+    width: auto;
+    height: 28rem;
+  }
+
+  .about-left-up-arrow {
+    top: 16rem;
+    right: 0;
+  }
+
+  .about-right-down-arrow {
+    top: 0;
+    left: 0;
+  }
+
+  .article-one-circle {
+    display: block;
+  }
+
+  .article-two-circle {
+    display: block;
+  }
+
+  .article-text {
+    width: 67ch;
+  }
+
+  .value-main-text {
+    width: 50ch;
+  }
+
+  .faq-item {
+    width: 43.0625rem;
+  }
+
   .download-circles {
     display: block;
   }
@@ -635,6 +716,7 @@ h1 {
 
   .footer-content {
     gap: 128px;
+    padding-top: 2rem;
   }
 
   .footer-content,

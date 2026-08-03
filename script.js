@@ -24,12 +24,14 @@ sections.forEach((section) => {
 
 // FAQ Dropdown
 
-const chevrons = document.querySelectorAll('.chevron');
+const faqItem = document.querySelectorAll('.faq-item');
 const faqAnswers = document.querySelectorAll('.faq-answer');
 
-chevrons.forEach((chevron, index) => {
-  chevron.addEventListener('click', () => {
-    console.log(faqAnswers[index]);
+faqItem.forEach((item, index) => {
+  const chevrons = item.querySelector('.chevron');
+
+  item.addEventListener('click', () => {
     faqAnswers[index].classList.toggle('show-answer');
+    chevrons.classList.toggle('chevron-open');
   });
 });

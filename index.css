@@ -537,8 +537,9 @@ header {
 }
 
 .download-circles {
-  display: none;
+  display: block;
   position: absolute;
+  right: -10rem;
   bottom: 0;
 }
 
