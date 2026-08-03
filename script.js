@@ -21,3 +21,15 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach((section) => {
   observer.observe(section);
 });
+
+// FAQ Dropdown
+
+const chevrons = document.querySelectorAll('.chevron');
+const faqAnswers = document.querySelectorAll('.faq-answer');
+
+chevrons.forEach((chevron, index) => {
+  chevron.addEventListener('click', () => {
+    console.log(faqAnswers[index]);
+    faqAnswers[index].classList.toggle('show-answer');
+  });
+});
