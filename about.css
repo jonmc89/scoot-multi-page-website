@@ -761,9 +761,10 @@ h1 {
 
   .about-article-one {
     flex-direction: row-reverse;
-    justify-content: left;
-    gap: 25rem;
+    justify-content: center;
+    gap: 17rem;
   }
+
   .article-header {
     width: 19ch;
     text-align: left;
@@ -775,8 +776,8 @@ h1 {
 
   .about-article-two {
     flex-direction: row;
-    justify-content: right;
-    gap: 25rem;
+    justify-content: center;
+    gap: 17rem;
   }
 
   .value-item-container {
