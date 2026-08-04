@@ -21,38 +21,38 @@
   --amber-50: #fff4df;
   --navy-800: #2f3b59;
 
-  --txt-1-fs: 56px;
-  --txt-1-ls: -2.5008px;
+  --txt-1-fs: 3.5rem;
+  --txt-1-ls: -0.1563rem;
   --txt-1-fw: 700;
-  --txt-2-fs: 48px;
-  --txt-2-ls: -2px;
+  --txt-2-fs: 3rem;
+  --txt-2-ls: -0.125rem;
   --txt-2-fw: 700;
-  --txt-3-fs: 40px;
-  --txt-3-ls: -1.7504px;
+  --txt-3-fs: 2.5rem;
+  --txt-3-ls: -0.1094rem;
   --txt-3-fw: 700;
-  --txt-4-fs: 32px;
-  --txt-4-ls: -1.4px;
+  --txt-4-fs: 2rem;
+  --txt-4-ls: -0.0875rem;
   --txt-4-fw: 700;
-  --txt-5-fs: 24px;
-  --txt-5-ls: -1px;
+  --txt-5-fs: 1.5rem;
+  --txt-5-ls: -0.0625rem;
   --txt-5-fw: 700;
   --txt-5-lh: 115%;
-  --txt-6-fs: 20px;
-  --txt-6-ls: 0.6px;
+  --txt-6-fs: 1.25rem;
+  --txt-6-ls: 0.0375rem;
   --txt-6-fw: 700;
   --txt-6-lh: 120%;
-  --txt-7-fs: 18px;
-  --txt-7-ls: 0.8px;
+  --txt-7-fs: 1.125rem;
+  --txt-7-ls: 0.05rem;
   --txt-7-fw: 700;
   --txt-7-lh: 135%;
-  --txt-8-fs: 15px;
+  --txt-8-fs: 0.9375rem;
   --txt-8-fw: 700;
   --txt-8-lh: 165%;
-  --txt-9-fs: 10px;
-  --txt-9-ls: 0.4496px;
+  --txt-9-fs: 0.625rem;
+  --txt-9-ls: 0.0281rem;
   --txt-9-lh: 150%;
   --txt-9-fw: 700;
-  --txt-10-fs: 15px;
+  --txt-10-fs: 0.9375rem;
   --txt-10-fw: 400;
   --txt-10-lh: 165%;
 }
@@ -98,7 +98,7 @@ body {
 
 .content-container {
   margin-inline: auto;
-  width: min(100%, 1440px);
+  width: min(100%, 90rem);
   overflow-x: hidden;
 }
 
@@ -111,18 +111,18 @@ header {
   transform: translateX(-50%);
   z-index: 99;
   background-color: var(--neutral-0);
-  padding: 24px 32px;
-  width: min(100%, 1440px);
-  max-width: 1440px;
+  padding: 1.5rem 2rem;
+  width: min(100%, 90rem);
+  max-width: 90rem;
 }
 
 .menu-icon {
   transition: background-image 0.2s ease-in-out;
   cursor: pointer;
-  margin-inline-end: 117.8496px;
+  margin-inline-end: 7.3656rem;
   background-image: url(./assets/icons/hamburger.svg);
-  width: 20px;
-  height: 16px;
+  width: 1.25rem;
+  height: 1rem;
 }
 
 .menu-icon-close {
@@ -132,17 +132,17 @@ header {
 .logo-nav-wrapper {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .header-logo {
-  width: 75.5008px;
-  height: 20px;
+  width: 4.7188rem;
+  height: 1.25rem;
 }
 
 .header-nav {
   display: none;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .header-btn {
@@ -151,9 +151,9 @@ header {
     background-color 0.2s,
     color 0.2s ease-in-out;
   cursor: pointer;
-  border: 3.2px solid var(--amber-400);
+  border: 0.2rem solid var(--amber-400);
   background-color: var(--amber-400);
-  padding: 16px 40px;
+  padding: 1rem 2.5rem;
   color: var(--neutral-0);
   font-weight: 700;
   font-family: 'Space Mono', Arial, Helvetica, sans-serif;
@@ -184,7 +184,7 @@ header {
 .mobile-menu {
   display: flex;
   position: absolute;
-  top: 68.8px;
+  top: 4.3rem;
   left: 0;
   flex-direction: column;
   justify-content: space-between;
@@ -193,9 +193,9 @@ header {
   z-index: 99;
   transition: all 0.2s ease-in-out;
   background-color: var(--slate-700);
-  padding: 24px 32px;
-  width: 256px;
-  height: 599px;
+  padding: 1.5rem 2rem;
+  width: 16rem;
+  height: 37.4375rem;
   pointer-events: none;
 }
 
@@ -208,8 +208,8 @@ header {
 .mobile-menu-nav {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  margin-block-start: 16px;
+  gap: 1.5rem;
+  margin-block-start: 1rem;
 }
 
 .mobile-nav-link {
@@ -232,10 +232,10 @@ header {
     background-color 0.2s ease-in-out,
     color 0.2s ease-in-out;
   cursor: pointer;
-  border: 3.2px solid var(--amber-400);
+  border: 0.2rem solid var(--amber-400);
   background-color: var(--amber-400);
-  padding: 16px 0;
-  width: 182px;
+  padding: 1rem 0;
+  width: 11.375rem;
   color: var(--neutral-0);
   font-weight: 700;
   font-family: 'Space Mono', Arial, Helvetica, sans-serif;
@@ -288,21 +288,25 @@ h1 {
 }
 
 .country-shape-ny {
+  display: none;
   position: absolute;
   top: 3rem;
   left: 10rem;
 }
 .country-shape-ldn {
+  display: none;
   position: absolute;
   top: 1.2rem;
   left: 19.5rem;
 }
 .country-shape-yk {
+  display: none;
   position: absolute;
   top: 3.5rem;
   left: 37.3rem;
 }
 .country-shape-jk {
+  display: none;
   position: absolute;
   top: 10.4rem;
   left: 34rem;
@@ -419,20 +423,17 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateY(40px);
   opacity: 0;
-  transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
+  transition: opacity 0.6s ease;
   background-color: var(--slate-600);
-  height: 320px;
+  height: 20rem;
 }
 
 .download-title {
-  margin-block-end: 40px;
+  margin-block-end: 2.5rem;
   color: var(--neutral-0);
   font-weight: var(--txt-4-fw);
-  font-size: clamp(var(--txt-4-fs), 5vw, 48px);
+  font-size: clamp(var(--txt-4-fs), 5vw, 3rem);
   letter-spacing: var(--txt-4-ls);
   text-align: center;
 }
@@ -457,25 +458,25 @@ h1 {
   opacity: 0;
   transition: opacity 0.6s;
   background-color: var(--slate-700);
-  height: 438px;
+  height: 27.375rem;
 }
 
 .footer-title {
   color: var(--neutral-0);
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
 }
 
 .footer-nav {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-block-end: 48px;
+  gap: 1rem;
+  margin-block-end: 3rem;
 }
 
 .social-link-container {
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .social-link {
@@ -504,7 +505,7 @@ h1 {
 .footer-content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 .footer-link {
@@ -531,13 +532,13 @@ h1 {
 
 /* Tablet */
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 45rem) {
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 96px;
+    height: 6rem;
   }
 
   .menu-icon {
@@ -545,12 +546,12 @@ h1 {
   }
 
   .logo-nav-wrapper {
-    gap: 96px;
+    gap: 6rem;
   }
 
   .header-logo {
-    width: 107.8192px;
-    height: 28.56px;
+    width: 6.7387rem;
+    height: 1.785rem;
   }
 
   .header-nav {
@@ -577,6 +578,13 @@ h1 {
     height: 21.0625rem;
   }
 
+  .country-shape-jk,
+  .country-shape-ldn,
+  .country-shape-ny,
+  .country-shape-yk {
+    display: block;
+  }
+
   .locations-circle {
     display: block;
   }
@@ -594,12 +602,12 @@ h1 {
   }
 
   .main-footer {
-    padding: 32px 0;
+    padding: 2rem 0;
     height: auto;
   }
 
   .footer-content {
-    gap: 128px;
+    gap: 8rem;
     padding-top: 2rem;
   }
 
@@ -617,16 +625,56 @@ h1 {
 
 /* Desktop */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 90rem) {
   header {
-    padding: 48px 0;
-    width: min(100%, 1440px);
+    padding: 3rem 0;
+    width: min(100%, 90rem);
+  }
+
+  .locations-header {
+    background-image: url(./assets/images/careers-locations-hero-desktop.jpg);
+  }
+
+  .map-container {
+    background-image: url(./assets/images/world-map-desktop.png);
+    width: 100%;
+    height: 33.9256rem;
+  }
+
+  .country-shape-ny {
+    top: 11rem;
+    left: 15.5rem;
+  }
+  .country-shape-ldn {
+    top: 5.7rem;
+    left: 36.5rem;
+  }
+  .country-shape-yk {
+    top: 10.5rem;
+    left: 73.7rem;
+  }
+  .country-shape-jk {
+    top: 24.7rem;
+    left: 67.3rem;
+  }
+
+  .your-city-section {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .your-city-title {
+    width: 26rem;
+  }
+
+  .your-city-title,
+  .your-city-main-text {
+    text-align: left;
   }
 
   .download-section {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 128px;
+    padding: 0 8rem;
   }
 
   .download-title {
@@ -634,13 +682,13 @@ h1 {
   }
 
   .download-circles {
-    right: -160px;
+    right: -10rem;
     bottom: 0;
   }
 
   .footer-content {
     justify-content: space-around;
-    gap: 384px;
+    gap: 24rem;
   }
 }
 
