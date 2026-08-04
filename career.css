@@ -248,6 +248,181 @@ header {
   color: var(--amber-400);
 }
 
+/* Career Header */
+
+.career-header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  margin-block-start: 4.7rem;
+  margin-block-end: 4rem;
+  background-image: url(./assets/images/careers-location-hero-mobile.jpg);
+  padding: 3.75rem 0;
+}
+
+h1 {
+  color: var(--neutral-0);
+}
+
+.career-circle {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  right: -2rem;
+}
+
+/* Career Hero Section */
+
+.career-hero {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  margin-block-end: 8rem;
+}
+
+.career-hero-arrow {
+  position: absolute;
+  top: 10.5rem;
+  right: -23rem;
+}
+
+.career-hero-image {
+  border-radius: 50%;
+  width: auto;
+  height: 19.4375rem;
+}
+
+.career-hero-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.career-hero-title,
+.career-hero-text {
+  text-align: center;
+}
+
+.career-hero-title {
+  color: var(--slate-600);
+  font-weight: var(--txt-4-fw);
+  font-size: var(--txt-4-fs);
+  line-height: 100%;
+  letter-spacing: var(--txt-4-ls);
+}
+
+.career-hero-text {
+  width: 36ch;
+  color: var(--slate-400);
+  font-weight: var(--txt-10-fw);
+  font-size: var(--txt-10-fs);
+  line-height: var(--txt-10-lh);
+  font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+}
+
+.say-hello-btn {
+  transition:
+    background-color 0.2s,
+    color 0.2s ease-in-out;
+  cursor: pointer;
+  border: 0.2rem solid var(--amber-400);
+  background-color: var(--amber-400);
+  padding: 1rem 2.5rem;
+  color: var(--neutral-0);
+  font-weight: 700;
+  font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.say-hello-btn:hover {
+  background-color: var(--neutral-0);
+  color: var(--amber-400);
+}
+
+/* Values Section */
+
+.values-section {
+  gap: 4rem;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  margin-block-end: 6rem;
+}
+
+.value-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.values-header,
+.value-sub-header,
+.value-number {
+  color: var(--slate-600);
+}
+
+.values-section,
+.value-item,
+.value-image-container,
+.value-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value-item {
+  gap: 4rem;
+}
+
+.value-image-container {
+  position: relative;
+}
+
+.value-image {
+  border-radius: 50%;
+}
+
+.value-image-number-wrapper {
+  display: flex;
+  position: absolute;
+  bottom: -3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--amber-400);
+  width: 6rem;
+  height: 6rem;
+}
+
+.value-number,
+.value-sub-header {
+  font-weight: var(--txt-5-fw);
+  font-size: var(--txt-5-fs);
+  line-height: var(--txt-5-lh);
+  letter-spacing: var(--txt-5-ls);
+}
+
+.value-text-container {
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.value-main-text {
+  width: 34ch;
+  color: var(--slate-400);
+  font-weight: var(--txt-10-fw);
+  font-size: var(--txt-10-fs);
+  line-height: var(--txt-10-lh);
+  font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+}
+
 /* Download Section */
 
 .download-section {
@@ -395,6 +570,24 @@ header {
     display: block;
   }
 
+  .career-header {
+    justify-content: flex-start;
+    background-image: url(./assets/images/careers-locations-hero-tablet.jpg);
+    height: 12.5rem;
+  }
+
+  h1 {
+    padding-left: 4rem;
+  }
+
+  .career-circle {
+    display: block;
+  }
+
+  .value-main-text {
+    width: 50ch;
+  }
+
   .download-circles {
     display: block;
   }
@@ -427,6 +620,19 @@ header {
   header {
     padding: 3rem 0;
     width: min(100%, 90rem);
+  }
+
+  .locations-header {
+    background-image: url(./assets/images/careers-locations-hero-desktop.jpg);
+  }
+
+  .value-item-container {
+    flex-direction: row;
+    gap: 10rem;
+  }
+
+  .value-main-text {
+    width: 30ch;
   }
 
   .download-section {
