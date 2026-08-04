@@ -264,6 +264,9 @@ header {
 }
 h1 {
   color: var(--neutral-0);
+  font-weight: var(--txt-3-fw);
+  font-size: clamp(var(--txt-3-fs), 5vw, 3.5rem);
+  letter-spacing: var(--txt-3-ls);
 }
 
 .locations-circle {
@@ -627,7 +630,7 @@ h1 {
 
 @media screen and (min-width: 90rem) {
   header {
-    padding: 3rem 0;
+    padding: 3rem 4rem;
     width: min(100%, 90rem);
   }
 

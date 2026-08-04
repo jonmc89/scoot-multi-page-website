@@ -265,6 +265,9 @@ header {
 
 h1 {
   color: var(--neutral-0);
+  font-weight: var(--txt-3-fw);
+  font-size: clamp(var(--txt-3-fs), 5vw, 3.5rem);
+  letter-spacing: var(--txt-3-ls);
 }
 
 .career-circle {
@@ -698,8 +701,32 @@ h1 {
 
 @media screen and (min-width: 90rem) {
   header {
-    padding: 3rem 0;
+    padding: 3rem 4rem;
     width: min(100%, 90rem);
+  }
+
+  .career-hero {
+    flex-direction: row-reverse;
+    justify-self: flex-start;
+    gap: 10rem;
+  }
+
+  .career-hero-text-wrapper {
+    align-items: flex-start;
+    padding-left: 4rem;
+  }
+
+  .career-hero-circle {
+    right: -36rem;
+  }
+
+  .career-hero-arrow {
+    right: -17rem;
+  }
+
+  .career-hero-title,
+  .career-hero-text {
+    text-align: left;
   }
 
   .locations-header {
