@@ -293,6 +293,15 @@ h1 {
   right: -23rem;
 }
 
+.career-hero-circle {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -23rem;
+  width: auto;
+  height: 30rem;
+}
+
 .career-hero-image {
   border-radius: 50%;
   width: auto;
@@ -314,7 +323,7 @@ h1 {
 .career-hero-title {
   color: var(--slate-600);
   font-weight: var(--txt-4-fw);
-  font-size: var(--txt-4-fs);
+  font-size: clamp(var(--txt-4-fs), 5vw, 3rem);
   line-height: 100%;
   letter-spacing: var(--txt-4-ls);
 }
@@ -627,9 +636,36 @@ h1 {
   .career-circle {
     display: block;
   }
+  .career-hero-circle {
+    display: block;
+  }
+
+  .career-hero-arrow {
+    top: 22rem;
+    right: 0;
+  }
+
+  .career-hero-image {
+    height: 30rem;
+  }
+
+  .career-hero-title {
+    width: 17ch;
+  }
+
+  .career-hero-text {
+    width: 58ch;
+  }
 
   .value-main-text {
     width: 50ch;
+  }
+
+  .position-item {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+    height: auto;
   }
 
   .download-circles {
