@@ -1,89 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Scoot</title>
-</head>
-<body>
-
-  About
-  Location
-  Careers
-
-  Get Scootin
-
-
-
-  Careers
-
-
-
-  Care to join our mission?
-
-  We’re always looking for ambitious individuals to help us on our journey. If you’re 
-  passionate about our mission to provide clean, accessible transport to improve urban 
-  living we want to hear from you!
-
-  Say Hello
-
-
-
-  Why join us?
-
-  01
-  Our tech
-  We’re using cutting edge technology to drive accessible urban transportation forward. 
-  Our fully electric scooters are a joy to ride!
-
-  02
-  Our integrity
-  We are fully committed to deliver a great yet safe, sustainable micro-mobility experience 
-  in every city we serve.
-
-  03
-  Our community
-  We support every community we serve. All workers are paid a living wage based on their 
-  location and are Scoot employees.
-
-  
-
-  General Manager
-  Jakarta, Indonesia
-  Apply
-
-  UI/UX Designer
-  Yokohama, Japan
-  Apply
-
-  Blog Content Copywriter
-  New York, United States
-  Apply
-
-  Graphic Designer
-  New York, United States
-  Apply
-
-  Fleet Supervisor
-  Jakarta, Indonesia
-  Apply
-
-  UX Analyst
-  London, United Kingdom
-  Apply
-
-  
-
-  Sign up and Scoot off today
-
-
-
-  About
-  Location
-  Careers
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./career.css" />
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | Scoot</title>
+  </head>
+  <body>
+    <div class="content-container">
+      <header>
+        <div class="logo-nav-wrapper">
+          <div id="menuIcon" class="menu-icon"></div>
+          <a href="index.html">
+            <img class="header-logo" src="./assets/logo.svg" alt="scoot logo" />
+          </a>
+          <nav class="header-nav">
+            <a class="header-link" href="about.html">About</a>
+            <a class="header-link" href="locations.html">Location</a>
+            <a class="header-link" href="careers.html">Careers</a>
+          </nav>
+        </div>
+        <a class="header-btn" href="#download">Get Scootin</a>
+        <div id="mobileMenu" class="mobile-menu">
+          <nav class="mobile-menu-nav">
+            <a class="mobile-nav-link" href="about.html">About</a>
+            <a class="mobile-nav-link" href="locations.html">Location</a>
+            <a class="mobile-nav-link" href="careers.html">Careers</a>
+          </nav>
+          <a class="mobile-nav-button" href="#download">Get Scootin</a>
+        </div>
+      </header>
+      <main></main>
+      <footer>
+        <section id="download" class="download-section">
+          <h2 class="download-title">Sign up and Scoot <br />off today</h2>
+          <div class="download-links">
+            <img
+              class="store-link"
+              src="./assets/icons/app-store.svg"
+              alt="App Store download badge that reads Available on the AppStore"
+              loading="lazy"
+            />
+            <img
+              class="store-link"
+              src="./assets/icons/google-play.svg"
+              alt="Google Play download badge"
+              loading="lazy"
+            />
+          </div>
+          <img
+            class="download-circles"
+            src="./assets/patterns/semi-circles.svg"
+            alt=""
+          />
+        </section>
+        <section class="main-footer">
+          <div class="footer-content">
+            <h3 class="footer-title">scoot</h3>
+            <nav class="footer-nav">
+              <a class="footer-link" href="about.html">About</a>
+              <a class="footer-link" href="locations.html">Location</a>
+              <a class="footer-link" href="careers.html">Careers</a>
+            </nav>
+            <div class="social-link-container">
+              <a class="social-link" href="#"
+                ><img src="./assets/icons/facebook.svg" alt=""
+              /></a>
+              <a class="social-link" href="#"
+                ><img src="./assets/icons/twitter.svg" alt=""
+              /></a>
+              <a class="social-link" href="#"
+                ><img src="./assets/icons/instagram.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
 </html>
