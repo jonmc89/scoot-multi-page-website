@@ -1,49 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Scoot</title>
-</head>
-<body>
-
-  About
-  Location
-  Careers
-
-  Get Scootin
-
-
-
-  Locations
-
-
-
-  New York
-  London
-  Yokohama
-  Jakarta
-
-  Your city not listed?
-
-  If you’d like to see Scoot in your hometown, be sure to let us know. We track 
-  requests and plan launches based on demand. Feel free to message us by clicking 
-  the link or messaging us on social.
-
-  Message Us
-
-  
-
-  Sign up and Scoot off today
-
-
-
-  About
-  Location
-  Careers
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./locations.css" />
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | Scoot</title>
+  </head>
+  <body>
+    <div class="content-container">
+      <header>
+        <div class="logo-nav-wrapper">
+          <div id="menuIcon" class="menu-icon"></div>
+          <a href="index.html">
+            <img class="header-logo" src="./assets/logo.svg" alt="scoot logo" />
+          </a>
+          <nav class="header-nav">
+            <a class="header-link" href="about.html">About</a>
+            <a class="header-link" href="locations.html">Location</a>
+            <a class="header-link" href="careers.html">Careers</a>
+          </nav>
+        </div>
+        <a class="header-btn" href="#download">Get Scootin</a>
+        <div id="mobileMenu" class="mobile-menu">
+          <nav class="mobile-menu-nav">
+            <a class="mobile-nav-link" href="about.html">About</a>
+            <a class="mobile-nav-link" href="locations.html">Location</a>
+            <a class="mobile-nav-link" href="careers.html">Careers</a>
+          </nav>
+          <a class="mobile-nav-button" href="#download">Get Scootin</a>
+        </div>
+      </header>
+      <main>
+        <section class="locations-header">
+          <h1>Locations</h1>
+        </section>
+      </main>
+      <footer>
+        <section id="download" class="download-section">
+          <h2 class="download-title">Sign up and Scoot <br />off today</h2>
+          <div class="download-links">
+            <img
+              class="store-link"
+              src="./assets/icons/app-store.svg"
+              alt="App Store download badge that reads Available on the AppStore"
+              loading="lazy"
+            />
+            <img
+              class="store-link"
+              src="./assets/icons/google-play.svg"
+              alt="Google Play download badge"
+              loading="lazy"
+            />
+          </div>
+          <img
+            class="download-circles"
+            src="./assets/patterns/semi-circles.svg"
+            alt=""
+          />
+        </section>
+        <section class="main-footer">
+          <div class="footer-content">
+            <h3 class="footer-title">scoot</h3>
+            <nav class="footer-nav">
+              <a class="footer-link" href="about.html">About</a>
+              <a class="footer-link" href="locations.html">Location</a>
+              <a class="footer-link" href="careers.html">Careers</a>
+            </nav>
+            <div class="social-link-container">
+              <a class="social-link" href="#"
+                ><img src="./assets/icons/facebook.svg" alt=""
+              /></a>
+              <a class="social-link" href="#"
+                ><img src="./assets/icons/twitter.svg" alt=""
+              /></a>
+              <a class="social-link" href="#"
+                ><img src="./assets/icons/instagram.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
 </html>
