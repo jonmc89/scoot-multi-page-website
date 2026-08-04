@@ -29,10 +29,10 @@ Your users should be able to:
 
 #### Home
 
-- When the "Get Scootin" call-to-action in the intro section is clicked, scroll down to the app download section at the bottom of the page
-- When the "Learn More" call-to-action is clicked in the "Easy to use riding telemetry" component navigate to the About page
-- When the "Learn More" call-to-action is clicked in the "Coming to a city near you" component navigate to the Locations page
-- When the "Learn More" call-to-action is clicked in the "Zero hassle payments" component navigate to the About page
+- When the "Get Scootin" call-to-action in the intro section is clicked, scroll down to the app download section at the bottom of the page - DONE
+- When the "Learn More" call-to-action is clicked in the "Easy to use riding telemetry" component navigate to the About page - DONE
+- When the "Learn More" call-to-action is clicked in the "Coming to a city near you" component navigate to the Locations page - DONE
+- When the "Learn More" call-to-action is clicked in the "Zero hassle payments" component navigate to the About page - DONE
 
 #### Careers
 
@@ -63,7 +63,7 @@ We've included two files to help you if you're using AI coding assistants (like 
 
 **How to use them:** You don't need to do anything! These files are automatically detected by most AI coding tools. The AI will read them and adjust its behavior to be a better learning partner—guiding you toward solutions rather than just giving you the answers.
 
-**Note:** These files are designed to help you *learn*, not to do the work for you. The AI is instructed to ask questions, give hints, and explain concepts rather than writing complete solutions.
+**Note:** These files are designed to help you _learn_, not to do the work for you. The AI is instructed to ask questions, give hints, and explain concepts rather than writing complete solutions.
 
 ## Building your project
 
