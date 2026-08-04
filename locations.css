@@ -252,6 +252,7 @@ header {
 
 .locations-header {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   opacity: 0;
@@ -265,10 +266,18 @@ h1 {
   color: var(--neutral-0);
 }
 
+.locations-circle {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  right: -2rem;
+}
+
 /* Map Section */
 
 .map-section {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -276,6 +285,51 @@ h1 {
   opacity: 0;
   transition: opacity 0.6s ease;
   margin-block-end: 4rem;
+}
+
+.country-shape-ny {
+  position: absolute;
+  top: 3rem;
+  left: 10rem;
+}
+.country-shape-ldn {
+  position: absolute;
+  top: 1.2rem;
+  left: 19.5rem;
+}
+.country-shape-yk {
+  position: absolute;
+  top: 3.5rem;
+  left: 37.3rem;
+}
+.country-shape-jk {
+  position: absolute;
+  top: 10.4rem;
+  left: 34rem;
+}
+
+.country-icon {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--amber-400);
+  width: 7.5rem;
+  height: 2.5rem;
+}
+
+.triangle {
+  position: absolute;
+  bottom: -0.2rem;
+  transform: rotate(45deg);
+  background-color: var(--amber-400);
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.city {
+  color: var(--slate-600);
+  font-weight: 700;
 }
 
 .map-container {
@@ -324,7 +378,7 @@ h1 {
   width: 19ch;
   color: var(--slate-600);
   font-weight: var(--txt-4-fw);
-  font-size: var(--txt-4-fs);
+  font-size: clamp(var(--txt-4-fs), 5vw, 3rem);
   letter-spacing: var(--txt-4-ls);
   text-align: center;
 }
@@ -505,6 +559,34 @@ h1 {
 
   .header-btn {
     display: block;
+  }
+
+  .locations-header {
+    justify-content: flex-start;
+    background-image: url(./assets/images/careers-locations-hero-tablet.jpg);
+    height: 12.5rem;
+  }
+
+  h1 {
+    padding-left: 4rem;
+  }
+
+  .map-container {
+    background-image: url(./assets/images/world-map-tablet.png);
+    width: 43.0625rem;
+    height: 21.0625rem;
+  }
+
+  .locations-circle {
+    display: block;
+  }
+
+  .country-container {
+    display: none;
+  }
+
+  .your-city-main-text {
+    width: 61ch;
   }
 
   .download-circles {
